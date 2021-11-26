@@ -1,0 +1,125 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  padding: 3rem;
+  margin: 10% auto;
+  max-width: 48rem;
+}
+
+body {
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-color: hsl(185, 75%, 39%);
+  background-repeat: no-repeat;
+  background-position: top -50rem left -24rem, right -24rem bottom -50rem;
+  color: hsl(227, 10%, 46%);
+  font-family: "open sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img {
+  width: 100%;
+  height: 17rem;
+  margin-bottom: 9rem;
+}
+
+.profile-img {
+  position: absolute;
+  width: 12rem;
+  border: 6px solid white;
+  top: 17rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 99rem;
+}
+
+.text {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 2.2rem;
+  color: hsl(229, 23%, 23%);
+  font-weight: 600;
+}
+
+strong {
+  color: hsl(229, 23%, 23%);
+  font-weight: 600;
+}
+
+.stat-box {
+  margin-top: 4rem;
+  /* margin-bottom: 3.2rem; */
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid hsla(227, 10%, 46%, 0.432);
+  padding: 3.2rem 2rem;
+}
+
+.attribution {
+  text-align: center;
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
